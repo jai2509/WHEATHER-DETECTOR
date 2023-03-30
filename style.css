@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/1390294940/display_1500/stock-photo-weather-forecast-concept-climate-change-background-collage-of-sky-image-with-variety-weather-1390294940.jpg');
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 48px;
+    margin-top: 0;
+    text-shadow: 2px 2px #ccc;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s;
+  }
+  
+  input[type="text"] {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    width: 70%;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  .weather-box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s;
+  }
+  
+  .location {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #ccc;
+  }
+  
+  .date {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .weather {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #ccc;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px #ccc;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      transform:
+      scale(1);
+    }
+    to {
+    transform: scale(1.1);
+    }
+    }
+    
+    .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    }/* Add hover effect to the temperature element */
+.temperature:hover {
+    animation: none;
+    transform: scale(1.2);
+    text-shadow: 3px 3px #ccc;
+    }
